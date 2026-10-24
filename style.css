@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+h2 {
+  font-size: 40px;
+}
+p,
+button,
+nav {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+p {
+  font-size: 20px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+header div h1 {
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 25px;
+}
+nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: ease 0.2s;
+}
+nav a:hover{
+  color: red;
+}
+nav button {
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  background-color: black;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+nav button:hover{
+  color: black;
+  background-color: white;
+}
+main {
+  background-color: black;
+  margin-top: 80px;
+}
+.homepage {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+}
+.homepage video {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+.hero-text {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  gap: 10px;
+}
+.hero-text h1 {
+  font-size: 80px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.hero-text p {
+  font-size: 30px;
+  font-weight: 300;
+}
+.gradient {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  bottom: 300px;
+}
+.m-vision {
+  margin-top: -400px;
+}
+.vision {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  width: 100%;
+}
+.vision-sub {
+  display: flex;
+  align-items: center;
+  width: 86%;
+  justify-content: space-between;
+}
+.vision-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 500px;
+  border-left: 1px solid white;
+  height: auto;
+}
+.vision-sub img {
+  width: 60%;
+}
+.vision-text h3 {
+  padding-left: 50px;
+}
+.vision-text h2 {
+  padding-left: 50px;
+  border-left: solid 3px white;
+}
+.vision-text p {
+  padding-left: 50px;
+  padding-bottom: 60px;
+}
+.autonomous {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.autonomous-sub {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.auto-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: auto;
+}
+.auto-text h2 {
+  letter-spacing: 3px;
+}
+.button1 {
+  display: flex;
+  height: auto;
+  width: auto;
+  align-items: center;
+}
+.button1 button {
+  text-transform: capitalize;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 20px 5px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 20px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.button1 button:hover {
+  background-color: black;
+  color: white;
+}
+.button1 div {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 8px 8px 0px;
+}
+.button1 div img {
+  width: 30px;
+}
+.real-time {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.real-time-sub {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.real-time-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: auto;
+}
+.real-time-text h2 {
+  letter-spacing: 3px;
+}
+.perception-enabled {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.perception-enabled-sub {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.perception-enabled-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: auto;
+}
+.perception-enabled-text h2 {
+  letter-spacing: 3px;
+}
+.why-auto {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(components/7.png);
+  background-attachment: fixed;
+  padding: 50px;
+}
+.why-auto-sub {
+  background-color: black;
+  height: 800px;
+  width: 40%;
+  color: white;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+}
+.why-auto-sub-btn {
+  margin-left: 50px;
+}
+.button2 {
+  display: flex;
+  height: auto;
+  width: auto;
+  align-items: center;
+}
+.button2 button {
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px 20px 5px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 20px;
+  color: white;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.button2 button:hover {
+  background-color: white;
+  color: black;
+}
+.button2 div {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 8px 8px 0px;
+}
+.button2 div img {
+  width: 30px;
+}
+.dummy {
+  width: 50%;
+}
+.auto-tune {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+.auto-tune-sub {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.auto-tune-sub h3 {
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+.auto-tune-text {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+}
+.flex-b {
+  display: flex;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  width: 100%;
+  letter-spacing: 5px;
+  gap: 100px;
+}
+.flex-c {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.flex-d {
+  display: flex;
+  border-bottom: 1px solid black;
+  letter-spacing: 8px;
+  font-size: 35px;
+  font-weight: 300;
+}
+.flex-e {
+  border-bottom: 2px solid black;
+}
+.partner {
+  height: 950px;
+}
+.partner-text p {
+  margin-top: 60px;
+}
+.hiring {
+  margin-top: 80px;
+  max-width: 500px;
+  padding: 60px 50px 30px 60px;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hiring p {
+  line-height: 40px;
+}
+.hiring-btn {
+  margin: 0;
+}
+.career-sub{
+  margin-bottom: 150px;
+}
+footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.footer-sub{
+  width: 80%;
+  margin:100px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.footer-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.navigation{
+  display: flex;
+  gap: 70px;
+}
+.quick-link{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.quick-link li{
+  list-style: none;
+}
+.quick-link li a{
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: black;
+}
+.address{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  letter-spacing: 2px;
+}
+.subscribe-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  letter-spacing: 2px;
+}
+.form{
+  display: flex;
+  
+}
+.logo{
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.form input{
+  width: 65%;
+  height: 40px;
+  border-radius: 8px 0px 0px 8px;
+  padding-left: 10px;
+}
+.form button{
+  width: 120px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-left: -15px;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+.form button:hover{
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+}
+.cpy{
+  margin: 50px 0px 50px 0px;
+}
+@media (max-width:768px){
+  p{
+    font-size: 15px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  header div{
+    width: 100%;
+  }
+  .homepage p{
+    width: 80%;
+  }
+  .autonomous-sub img{
+    width: 100%;
+  }
+  
+}
